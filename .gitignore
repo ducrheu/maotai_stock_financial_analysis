@@ -1,0 +1,26 @@
+# 忽略全量数据文件
+data/maotai_stock.csv
+
+# 忽略Python缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 忽略编辑器配置文件
+.idea/
+.vscode/
+.DS_Store
+
+# 忽略虚拟环境
+venv/
+env/
+
+# 忽略日志文件
+*.log
+
+# 忽略本地敏感配置
+.env
+config.py
+python/config.py
+
