@@ -3,11 +3,12 @@ from sqlalchemy import create_engine
 import matplotlib.pyplot as plt
 
 # 连接PG
-db_host = 'localhost'
-db_port = '5432'
-db_name = 'stock'
-db_user = 'postgres'
-db_pwd = '060108'
+db_host = os.getenv("DB_HOST")
+db_port = os.getenv("DB_PORT")
+db_user = os.getenv("DB_USER")
+db_pwd = os.getenv("DB_PWD")
+db_name = os.getenv("DB_NAME")
+
 
 engine = create_engine(f"postgresql+psycopg2://{db_user}:{db_pwd}@{db_host}:{db_port}/{db_name}")
 
